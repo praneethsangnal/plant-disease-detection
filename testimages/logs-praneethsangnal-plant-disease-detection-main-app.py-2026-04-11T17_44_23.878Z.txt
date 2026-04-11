@@ -1,0 +1,141 @@
+
+[     UTC     ] Logs for plant-disease-detection-4esfejelwatevdtxxdo9w7.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[17:20:18] 🖥 Provisioning machine...
+[17:20:18] 🎛 Preparing system...
+[17:20:18] ⛓ Spinning up manager process...
+[17:20:16] 🚀 Starting up repository: 'plant-disease-detection', branch: 'main', main module: 'app.py'
+[17:20:16] 🐙 Cloning repository...
+[17:20:17] 🐙 Cloning into '/mount/src/plant-disease-detection'...
+
+[17:20:17] 🐙 Cloned repository!
+[17:20:17] 🐙 Pulling code changes from Github...
+[17:20:17] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because only the following versions of numpy are available:
+          numpy<=2.3.5
+          numpy>=2.4.0
+      and numpy==2.4.0 was yanked (reason: Backward compatibility bug), we can
+      conclude that numpy>=2.1.0,<2.4.1 depends on numpy>=2.1.0,<=2.3.5.
+      And because ml-dtypes==0.5.4 depends on numpy>=2.1.0, we can conclude
+      that ml-dtypes==0.5.4 depends on one of:
+          numpy>=2.1.0,<=2.3.5
+          numpy>=2.4.1
+
+      And because you require ml-dtypes==0.5.4 and numpy==2.0.2, we can
+      conclude that your requirements are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+Resolved 4 packages in 48ms
+Prepared 4 packages in 107ms
+Installed 4 packages in 13ms
+ +[2026-04-11 17:20:18.708845]  markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ + pygments==2.20.0
+ + rich==14.3.4
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting absl-py==2.4.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 1))
+  Downloading absl_py-2.4.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting altair==6.0.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 2))
+  Downloading altair-6.0.0-py3-none-any.whl.metadata (11 kB)
+Collecting astunparse==1.6.3 (from -r /mount/src/plant-disease-detection/requirements.txt (line 3))
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting attrs==26.1.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 4))
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting blinker==1.9.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 5))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting cachetools==7.0.5 (from -r /mount/src/plant-disease-detection/requirements.txt (line 6))
+  Downloading cachetools-7.0.5-py3-none-any.whl.metadata (5.6 kB)
+Collecting certifi==2026.2.25 (from -r /mount/src/plant-disease-detection/requirements.txt (line 7))
+  Downloading certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+Collecting charset-normalizer==3.4.6 (from -r /mount/src/plant-disease-detection/requirements.txt (line 8))
+  Downloading charset_normalizer-3.4.6-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.6/40.6 kB 19.5 MB/s eta 0:00:00[2026-04-11 17:20:20.071835] 
+Collecting click==8.3.1 (from -r /mount/src/plant-disease-detection/requirements.txt (line 9))
+  Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting colorama==0.4.6 (from -r /mount/src/plant-disease-detection/requirements.txt (line 10))
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting contourpy==1.3.3 (from -r /mount/src/plant-disease-detection/requirements.txt (line 11))
+  Downloading contourpy-1.3.3-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler==0.12.1 (from -r /mount/src/plant-disease-detection/requirements.txt (line 12))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting flatbuffers==25.12.19 (from -r /mount/src/plant-disease-detection/requirements.txt (line 13))
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting fonttools==4.62.1 (from -r /mount/src/plant-disease-detection/requirements.txt (line 14))
+  Downloading fonttools-4.62.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (117 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.5/117.5 kB 25.1 MB/s eta 0:00:00[2026-04-11 17:20:20.523482] 
+Collecting gast==0.7.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 15))
+  Downloading gast-0.7.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting gitdb==4.0.12 (from -r /mount/src/plant-disease-detection/requirements.txt (line 16))
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting GitPython==3.1.46 (from -r /mount/src/plant-disease-detection/requirements.txt (line 17))
+  Downloading gitpython-3.1.46-py3-none-any.whl.metadata (13 kB)
+Collecting google-pasta==0.2.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 18))
+  Downloading google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+Collecting grpcio==1.78.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 19))
+  Downloading grpcio-1.78.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+Collecting h5py==3.14.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 20))
+  Downloading h5py-3.14.0.tar.gz (424 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 424.3/424.3 kB 57.2 MB/s eta 0:00:00[2026-04-11 17:20:21.795467] 
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting idna==3.11 (from -r /mount/src/plant-disease-detection/requirements.txt (line 21))
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting Jinja2==3.1.6 (from -r /mount/src/plant-disease-detection/requirements.txt (line 22))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting joblib==1.5.3 (from -r /mount/src/plant-disease-detection/requirements.txt (line 23))
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting jsonschema==4.26.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 24))
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting jsonschema-specifications==2025.9.1 (from -r /mount/src/plant-disease-detection/requirements.txt (line 25))
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting keras==3.13.2 (from -r /mount/src/plant-disease-detection/requirements.txt (line 26))
+  Downloading keras-3.13.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting kiwisolver==1.5.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 27))
+  Downloading kiwisolver-1.5.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+Collecting libclang==18.1.1 (from -r /mount/src/plant-disease-detection/requirements.txt (line 28))
+  Downloading libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl.metadata (5.2 kB)
+Collecting Markdown==3.10.2 (from -r /mount/src/plant-disease-detection/requirements.txt (line 29))
+  Downloading markdown-3.10.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting markdown-it-py==4.0.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 30))
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting MarkupSafe==3.0.3 (from -r /mount/src/plant-disease-detection/requirements.txt (line 31))
+  Downloading markupsafe-3.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting matplotlib==3.10.8 (from -r /mount/src/plant-disease-detection/requirements.txt (line 32))
+  Downloading matplotlib-3.10.8-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 322.5 MB/s eta 0:00:00[2026-04-11 17:20:30.347813] 
+Collecting mdurl==0.1.2 (from -r /mount/src/plant-disease-detection/requirements.txt (line 33))
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting ml_dtypes==0.5.4 (from -r /mount/src/plant-disease-detection/requirements.txt (line 34))
+  Downloading ml_dtypes-0.5.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.9 kB)
+Collecting namex==0.1.0 (from -r /mount/src/plant-disease-detection/requirements.txt (line 35))
+  Downloading namex-0.1.0-py3-none-any.whl.metadata (322 bytes)
+Collecting narwhals==2.18.1 (from -r /mount/src/plant-disease-detection/requirements.txt (line 36))
+  Downloading narwhals-2.18.1-py3-none-any.whl.metadata (14 kB)
+Collecting numpy==2.0.2 (from -r /mount/src/plant-disease-detection/requirements.txt (line 37))
+  Downloading numpy-2.0.2.tar.gz (18.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.9/18.9 MB 183.5 MB/s eta 0:00:00[2026-04-11 17:20:30.944431] 
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
