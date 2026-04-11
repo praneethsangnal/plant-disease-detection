@@ -6,6 +6,13 @@ This project is a deep learning-based web application that detects plant disease
 
 ---
 
+## 🌐 Live Demo
+
+👉 **Try the app here:**
+https://plant-disease-detection-zjvr.onrender.com/
+
+---
+
 ## 🚀 Features
 
 * 🌱 Plant disease classification using deep learning
@@ -179,8 +186,8 @@ streamlit run app.py
 
 * Train on real-world dataset
 * Add more robust augmentation
-* Deploy on cloud for public access
-* Improve model generalization
+* Improve UI/UX
+* Optimize model for faster inference
 
 ---
 
