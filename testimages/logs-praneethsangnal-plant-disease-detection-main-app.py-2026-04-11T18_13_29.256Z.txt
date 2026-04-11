@@ -1,0 +1,89 @@
+
+[     UTC     ] Logs for plant-disease-detection-pfba3t3tgatgzwhfbtur83.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[18:10:51] 🖥 Provisioning machine...
+[18:10:51] 🎛 Preparing system...
+[18:10:51] ⛓ Spinning up manager process...
+[18:10:49] 🚀 Starting up repository: 'plant-disease-detection', branch: 'main', main module: 'app.py'
+[18:10:49] 🐙 Cloning repository...
+[18:10:49] 🐙 Cloning into '/mount/src/plant-disease-detection'...
+
+[18:10:49] 🐙 Cloned repository!
+[18:10:49] 🐙 Pulling code changes from Github...
+[18:10:50] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because tensorflow-cpu==2.19.0 has no wheels with a matching Python ABI
+      tag and you require tensorflow-cpu==2.19.0, we can conclude that your
+      requirements are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+Resolved 4 packages in 131ms
+Prepared 4 packages in 92ms
+Installed 4 packages in 11ms
+ [2026-04-11 18:10:50.951865] + markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ + pygments==2.20.0
+ + rich==14.3.4
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+ERROR: Could not find a version that satisfies the requirement tensorflow-cpu==2.19.0 (from versions: none)
+ERROR: No matching distribution found for tensorflow-cpu==2.19.0
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.3.4-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.3.4-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 kB 15.6 MB/s eta 0:00:00[2026-04-11 18:10:53.376919] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 265.2 MB/s eta 0:00:00[2026-04-11 18:10:53.390338] 
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 76.3 MB/s eta 0:00:00[2026-04-11 18:10:53.419345] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.20.0
+    Uninstalling Pygments-2.20.0:
+      Successfully uninstalled Pygments-2.20.0
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.3.4
+    Uninstalling rich-14.3.4:
+      Successfully uninstalled rich-14.3.4
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.20.0 rich-14.3.4
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[18:10:56] ❗️ installer returned a non-zero exit code
+[18:10:56] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.

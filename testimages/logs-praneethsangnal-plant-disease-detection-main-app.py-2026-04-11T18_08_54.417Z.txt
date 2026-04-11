@@ -1,0 +1,246 @@
+
+[     UTC     ] Logs for plant-disease-detection-m38nytz4takdptnq5ppxuw.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[18:06:35] 🖥 Provisioning machine...
+[18:06:35] 🎛 Preparing system...
+[18:06:35] ⛓ Spinning up manager process...
+[18:06:34] 🚀 Starting up repository: 'plant-disease-detection', branch: 'main', main module: 'app.py'
+[18:06:34] 🐙 Cloning repository...
+[18:06:35] 🐙 Cloning into '/mount/src/plant-disease-detection'...
+
+[18:06:35] 🐙 Cloned repository!
+[18:06:35] 🐙 Pulling code changes from Github...
+[18:06:35] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because tensorflow==2.19.0 has no wheels with a matching Python ABI
+      tag and you require tensorflow==2.19.0, we can conclude that your
+      requirements are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+Resolved 4 packages in 146ms
+Prepared 4 packages in 109ms
+Installed 4 packages in 18ms
+ + markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ +[2026-04-11 18:06:36.336611]  pygments==2.20.0
+ + rich==14.3.4
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+ERROR: Could not find a version that satisfies the requirement tensorflow==2.19.0 (from versions: none)
+ERROR: No matching distribution found for tensorflow==2.19.0
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.3.4-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.3.4-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 kB 16.1 MB/s eta 0:00:00[2026-04-11 18:06:38.800026] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 262.4 MB/s eta 0:00:00[2026-04-11 18:06:38.812713] 
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 86.1 MB/s eta 0:00:00[2026-04-11 18:06:38.838830] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.20.0
+    Uninstalling Pygments-2.20.0:
+      Successfully uninstalled Pygments-2.20.0
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.3.4
+    Uninstalling rich-14.3.4:
+      Successfully uninstalled rich-14.3.4
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.20.0 rich-14.3.4
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[18:06:41] ❗️ installer returned a non-zero exit code
+[18:06:41] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[18:08:14] 🐙 Pulling code changes from Github...
+[18:08:14] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because tensorflow-cpu==2.19.0 has no wheels with a matching Python ABI
+      tag and you require tensorflow-cpu==2.19.0, we can conclude that your
+      requirements are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+Audited 1 package in 1ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+ERROR: Could not find a version that satisfies the requirement tensorflow-cpu==2.19.0 (from versions: none)
+ERROR: No matching distribution found for tensorflow-cpu==2.19.0
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.3.4-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.3.4-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 kB 17.6 MB/s eta 0:00:00[2026-04-11 18:08:17.651480] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 220.1 MB/s eta 0:00:00[2026-04-11 18:08:17.664362] 
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 105.0 MB/s eta 0:00:00[2026-04-11 18:08:17.689387] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.20.0
+    Uninstalling Pygments-2.20.0:
+      Successfully uninstalled Pygments-2.20.0
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.3.4
+    Uninstalling rich-14.3.4:
+      Successfully uninstalled rich-14.3.4
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.20.0 rich-14.3.4
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[18:08:20] ❗️ installer returned a non-zero exit code
+[18:08:31] 🖥 Provisioning machine...
+[18:08:36] 🎛 Preparing system...
+[18:08:35] 🚀 Starting up repository: 'plant-disease-detection', branch: 'main', main module: 'app.py'
+[18:08:35] 🐙 Cloning repository...
+[18:08:37] 🐙 Cloning into '/mount/src/plant-disease-detection'...
+
+[18:08:37] 🐙 Cloned repository!
+[18:08:37] 🐙 Pulling code changes from Github...
+[18:08:38] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:[2026-04-11 18:08:38.779398] 
+  ╰─▶ Because tensorflow-cpu==2.19.0 has no wheels with a matching Python ABI
+      tag and you require tensorflow-cpu==2.19.0, we can conclude that your
+      requirements are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.14.3 environment at /home/adminuser/venv
+[18:08:37] ⛓ Spinning up manager process...
+Resolved 4 packages in 152ms
+Prepared 4 packages in 691ms
+Installed 4 packages in 13ms
+ + markdown-it-py==4.0.0[2026-04-11 18:08:39.676914] 
+ + mdurl==0.1.2
+ + pygments==2.20.0
+ + rich==14.3.4
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+ERROR: Could not find a version that satisfies the requirement tensorflow-cpu==2.19.0 (from versions: none)
+ERROR: No matching distribution found for tensorflow-cpu==2.19.0
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.3.4-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.3.4-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 kB 7.7 MB/s eta 0:00:00[2026-04-11 18:08:42.924546] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 422.7 MB/s eta 0:00:00[2026-04-11 18:08:42.936683] 
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 111.0 MB/s eta 0:00:00[2026-04-11 18:08:42.959954] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.20.0
+    Uninstalling Pygments-2.20.0:
+      Successfully uninstalled Pygments-2.20.0
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.3.4
+    Uninstalling rich-14.3.4:
+      Successfully uninstalled rich-14.3.4
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.20.0 rich-14.3.4
+
+[notice] A new release of pip is available: 24.0 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[18:08:45] ❗️ installer returned a non-zero exit code
+[18:08:45] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
