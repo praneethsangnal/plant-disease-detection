@@ -13,7 +13,7 @@ uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     img = Image.open(uploaded_file).convert("RGB")
 
-    st.image(img, caption="Uploaded Image", use_column_width=True)
+    st.image(img, caption="Uploaded Image", width=300)
 
     if st.button("Predict"):
         with st.spinner("Analyzing..."):
@@ -31,4 +31,4 @@ if uploaded_file is not None:
 
         # Grad-CAM
         st.subheader("🔥 Grad-CAM Visualization")
-        st.image(output_path, use_column_width=True)
+        st.image(Image.open(output_path), caption="Grad-CAM")

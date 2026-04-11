@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import numpy as np
 import tensorflow as tf
+from PIL import Image
 from tensorflow.keras.preprocessing import image
 import cv2
 
@@ -10,7 +11,7 @@ import cv2
 # ======================
 MODEL_PATH = Path("models/best_model.h5")
 RESULTS_PATH = Path("reports/results.json")
-IMAGE_PATH = Path("testimages/tomatocurl.jpg")
+IMAGE_PATH = Path("testimages/cornnorth.JPG")
 
 IMG_SIZE = (224, 224)
 
@@ -44,13 +45,7 @@ def get_gradcam_heatmap(img_array, model, pred_index=None):
     base_model = model.layers[0] 
     
     # 2. Get the last convolutional layer
-    if best_model_name == "efficientnet":
-        try:
-            last_conv_layer = base_model.get_layer("top_activation")
-        except:
-            last_conv_layer = base_model.get_layer("top_conv")
-    else:
-        last_conv_layer = base_model.get_layer("Conv_1")
+    last_conv_layer = base_model.get_layer("Conv_1")
 
     # 3. FIX: Create a functional model using the BASE MODEL'S input
     # This bypasses the 'Sequential has no input' error.
@@ -90,8 +85,8 @@ def get_gradcam_heatmap(img_array, model, pred_index=None):
 
     return heatmap.numpy()
 
-def overlay_heatmap(img_path, heatmap):
-    img = np.array(img_path)
+def overlay_heatmap(img, heatmap):
+    img = np.array(img)
     img = cv2.resize(img, (224, 224))
 
     heatmap = cv2.resize(heatmap, (224, 224))
@@ -110,10 +105,16 @@ def overlay_heatmap(img_path, heatmap):
 # ======================
 # Prediction
 # ======================
-def predict_image(img_path):
+def predict_image(img_input):
 
-    img = img_path
+    # Handle both path and PIL image
+    if isinstance(img_input, (str, Path)):
+        img = Image.open(img_input).convert("RGB")
+    else:
+        img = img_input  # already PIL image
+
     img = img.resize(IMG_SIZE)
+
     img_array = image.img_to_array(img)
 
     # Correct preprocessing
@@ -130,10 +131,13 @@ def predict_image(img_path):
     confidence = float(np.max(predictions))
     predicted_class = index_to_class[predicted_index]
 
+    print("Predicted index:", predicted_index)
+    print("Predicted class:", predicted_class)
+
     # Grad-CAM
     heatmap = get_gradcam_heatmap(img_array, model, pred_index=predicted_index)
 
-    output_path = overlay_heatmap(img_path, heatmap)
+    output_path = overlay_heatmap(img, heatmap)
 
     print(f"Grad-CAM saved at: {output_path}")
 
@@ -145,12 +149,12 @@ def predict_image(img_path):
 # ======================
 if __name__ == "__main__":
 
-    label, conf = predict_image(IMAGE_PATH)
+    label, conf, cam_path = predict_image(IMAGE_PATH)
 
     if "___" in label:
         plant, disease = label.split("___")
-        print(f"\n🌿 Plant: {plant}")
-        print(f"🦠 Disease: {disease}")
+        print(f"\n Plant: {plant}")
+        print(f" Disease: {disease}")
     else:
         print(f"\nPrediction: {label}")
 
